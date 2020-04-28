@@ -13,7 +13,14 @@ The name S-T-e-W comes from Stop-The-World, a requirement of this garbage collec
 The first thing you need to do is to decide **when** to collect, for example:
 
 ```c++
-virtual bool IsTimeToCollect()
+virtual bool StewGC::IsTimeToCollect()
+
+default
+
+virtual bool StewGC::IsTimeToCollect()
+{
+    
+}
 ```
 
 Use on your C++ project(s)
