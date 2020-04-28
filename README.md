@@ -10,7 +10,7 @@ Stew GC is a multi-threaded lighting fast garbage collector implemented using th
 
 The name S-T-e-W comes from Stop-The-World, a requirement of this garbage collector. In short, it requires that all objects be frozen for a brief amount of time, a process called Parallel Marking. Our approach features carefully crafted multi-producer lock-free data structures. Our implementation is powered at its core by thread affinity and falling into lock-free syncronization only as a back up. What you get is a lighting fast, modern and portable, search and destroy garbage collector.
 
-The first thing you need to do is to decide **when** to collect by overriding the following:
+The first thing you need to do is to decide **WHEN** to collect by overriding the following:
 
 ```c++
 virtual bool StewGC::IsTimeToCollect()
@@ -18,7 +18,7 @@ virtual bool StewGC::IsTimeToCollect()
 
 ... it's default implementation is ...
 
-```
+```c++
 virtual bool StewGC::IsTimeToCollect()
 {
     
