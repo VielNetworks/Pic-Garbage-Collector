@@ -23,7 +23,7 @@ virtual bool IsTimeToCollect(std::uint64_t a_nTotalBytes, std::uint64_t a_nLastB
 }
 ```
 
-The second thing you need to do is to syncronize all running threads by calling the following:
+The second thing you need to do is to synchronize all running threads by calling the following:
 
 ```c++
 EnsureGarbageCollection();
