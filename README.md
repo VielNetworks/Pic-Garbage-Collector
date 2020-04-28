@@ -13,7 +13,7 @@ The name S-T-e-W comes from Stop-The-World, a requirement of this garbage collec
 The first thing you need to do is to decide **WHEN** to collect by overriding the following:
 
 ```c++
-virtual bool IsTimeToCollect(std::uint64_t a_nTotalBytes, std::uint64_t a_nLastBytes, std::uint64_t a_nMSSinceLast)
+virtual bool IsTimeToCollect(std::uint64_t a_nTotalBytes, std::uint64_t a_nLastBytes, std::uint64_t a_nMSSinceLast);
 
 /* The default implementation is ...*/
 
