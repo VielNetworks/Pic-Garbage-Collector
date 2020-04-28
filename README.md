@@ -15,7 +15,7 @@ The first thing you need to do is to decide **WHEN** to collect by overriding th
 ```c++
 virtual bool IsTimeToCollect(std::uint64_t a_nTotalBytes, std::uint64_t a_nLastBytes, std::uint64_t a_nMSSinceLast)
 
-// The default implementation is ...
+/* The default implementation is ...*/
 
 virtual bool IsTimeToCollect(std::uint64_t a_nTotalBytes, std::uint64_t a_nLastBytes, std::uint64_t a_nMSSinceLast)
 {   // If total bytes are double the prev total and at least 10 milli-seconds have passed then collect
