@@ -31,8 +31,6 @@ EnsureGarbageCollection();
 
 Try it for yourself!
 
-Viel Networks @ 2020
-
 Use on your C++ project(s)
 --------------------------
 
