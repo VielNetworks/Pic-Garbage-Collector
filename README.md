@@ -1,7 +1,7 @@
 # Stew Garbage Collector
 C and C++ Garbage Collector
 
-Welcome to Stew!
+### Welcome to Stew!
 
 Watch our 1 minute introductory video on how to use this fast-and-free garbage collector [HERE!](http://www.yahoo.com) 
 
