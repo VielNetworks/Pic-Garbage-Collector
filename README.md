@@ -29,6 +29,10 @@ The second thing you need to do is to syncronize all running threads by calling 
 EnsureGarbageCollection();
 ```
 
+Try it for yourself!
+
+Viel Networks @ 2020
+
 Use on your C++ project(s)
 --------------------------
 
