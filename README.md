@@ -13,15 +13,15 @@ The name S-T-e-W comes from Stop-The-World, a requirement of this garbage collec
 The first thing you need to do is to decide **WHEN** to collect by overriding the following:
 
 ```c++
-virtual bool StewGC::IsTimeToCollect(long long a_nTotalBytes, long long a_nLastTotalBytes, long long a_nMilliSecondsSinceLastCollection)
+virtual bool StewGC::IsTimeToCollect(std::uint64_t a_nTotalBytes, std::uint64_t a_nLastBytes, std::uint64_t a_nMSSinceLast)
 ```
 
 ... it's default implementation is ...
 
 ```c++
-virtual bool StewGC::IsTimeToCollect(long long a_nTotalBytes, long long a_nLastTotalBytes, long long a_nMilliSecondsSinceLastCollection)
-{   // If total bytes are double the prev total and at least 1 milli-second has passed --> collect
-    return a_nTotalBytes > a_nLastTotalBytes * 2 && a_nMilliSecondsSinceLastCollection >= 1;
+virtual bool StewGC::IsTimeToCollect(std::uint64_t a_nTotalBytes, std::uint64_t a_nLastBytes, std::uint64_t a_nMSSinceLast)
+{   // If total bytes are double the prev total and at least 1 milli-second has passed then collect
+    return a_nTotalBytes > a_nLastBytes * 2 && a_nMSSinceLast >= 1;
 }
 ```
 
