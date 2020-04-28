@@ -16,7 +16,7 @@ The first thing you need to do is to decide **WHEN** to collect by overriding th
 virtual bool IsTimeToCollect(std::uint64_t a_nTotalBytes, std::uint64_t a_nLastBytes, std::uint64_t a_nMSSinceLast)
 ```
 
-... it's default implementation is ...
+The default implementation is ...
 
 ```c++
 virtual bool IsTimeToCollect(std::uint64_t a_nTotalBytes, std::uint64_t a_nLastBytes, std::uint64_t a_nMSSinceLast)
