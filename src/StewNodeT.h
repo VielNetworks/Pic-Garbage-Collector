@@ -1,6 +1,6 @@
 #pragma once
-#ifndef STEWNODET
-#define STEWNODET
+#ifndef STEWNODET_H
+#define STEWNODET_H
 
 #include "StewNode.h"
 
@@ -14,4 +14,4 @@ namespace StewGC
     };
 }
 
-#endif // STEWNODET
+#endif // STEWNODET_H
