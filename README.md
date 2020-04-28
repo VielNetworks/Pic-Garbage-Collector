@@ -20,8 +20,8 @@ The default implementation is ...
 
 ```c++
 virtual bool IsTimeToCollect(std::uint64_t a_nTotalBytes, std::uint64_t a_nLastBytes, std::uint64_t a_nMSSinceLast)
-{   // If total bytes are double the prev total and at least 1 milli-second has passed then collect
-    return a_nTotalBytes > a_nLastBytes * 2 && a_nMSSinceLast >= 1;
+{   // If total bytes are double the prev total and at least 10 milli-seconds have passed then collect
+    return a_nTotalBytes > a_nLastBytes * 2 && a_nMSSinceLast >= 10;
 }
 ```
 
