@@ -14,9 +14,11 @@ The first thing you need to do is to decide **when** to collect, for example:
 
 ```c++
 virtual bool StewGC::IsTimeToCollect()
+```
 
-default
+... defaults to ...
 
+```
 virtual bool StewGC::IsTimeToCollect()
 {
     
