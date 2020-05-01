@@ -1,4 +1,4 @@
-# Stew Garbage Collector
+# Pic Garbage Collector
 C and C++ Garbage Collector
 
 
